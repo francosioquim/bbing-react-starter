@@ -9,8 +9,12 @@ const styles = () => ({
   },
   list: {
     textAlign: 'left',
+    fontSize: '1.2rem',
     '& > li': {
       margin: '10px 0',
+      '& > a': {
+        textDecoration: 'none',
+      },
     },
   },
 })
@@ -21,7 +25,9 @@ class Landing extends React.Component {
 
     return (
       <div className={classes.root}>
-        <Typography type="title">Bibing: A ReactJS Starter Kit</Typography>
+        <Typography type="title" align="center">
+					Bibing: A ReactJS Starter Kit
+        </Typography>
         <div>
           <Typography type="headline" align="left">
             {'What\'s inside?'}

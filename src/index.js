@@ -1,4 +1,4 @@
-import './index.css'
+import './styles/index.css'
 import 'typeface-alegreya-sans'
 
 import App from './App'
