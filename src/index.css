@@ -1,6 +1,19 @@
+html,
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
-  text-align: center;
+}
+
+html {
+  box-sizing: border-box
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+[hidden] {
+  display: none !important
 }

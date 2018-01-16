@@ -33,7 +33,7 @@ class AppHeader extends React.Component {
               <MenuIcon />
             </IconButton>
             <Typography type="title" color="inherit" className={classes.flex}>
-							Parent Trader
+							Bibing
             </Typography>
             <Button color="contrast">Login</Button>
           </Toolbar>
