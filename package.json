@@ -27,11 +27,14 @@
 	"devDependencies": {
 		"babel-eslint": "^8.2.1",
 		"eslint-config-airbnb": "^16.1.0",
+		"gh-pages": "^1.1.0",
 		"prettier-eslint": "^8.7.4"
 	},
 	"homepage": "https://francosioquim.github.io/bbing-react-starter",
 	"babel": {
-		"presets": ["react-app"]
+		"presets": [
+			"react-app"
+		]
 	},
 	"eslintConfig": {
 		"extends": "react-app"
