@@ -1,3 +1,2 @@
-# README #
-
-I'm currently building this one so stay put.
+# bbing-react-starter
+A simple starter kit based from Create React App using Material-UI, Redux, ES8
