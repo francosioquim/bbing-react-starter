@@ -1,8 +1,10 @@
 import { createMuiTheme } from 'material-ui/styles'
-import green from 'material-ui/colors/green'
 import grey from 'material-ui/colors/grey'
+import orange from 'material-ui/colors/orange'
 
 const fontWeightSemiBold = 700
+const fontWeightRegular = 500
+const fontWeightThin = 400
 const primary = {
   50: '#ede7f6',
   100: '#d1c4e9',
@@ -24,7 +26,7 @@ const primary = {
 const theme = createMuiTheme({
   palette: {
     primary,
-    secondary: green,
+    secondary: orange,
   },
   status: {
     danger: 'orange',
@@ -36,14 +38,32 @@ const theme = createMuiTheme({
       fontSize: '2rem',
       lineHeight: 2,
       fontWeight: fontWeightSemiBold,
-      color: primary[500],
+      color: grey[900],
     },
-    subheading: {
+    headline: {
       fontSize: '1.4rem',
       lineHeight: 2,
       fontWeight: fontWeightSemiBold,
+      color: primary[500],
+    },
+    subheading: {
+      fontSize: '0.9rem',
+      lineHeight: 1,
+      fontWeight: fontWeightThin,
+      color: grey[700],
+    },
+    caption: {
+      fontSize: '1rem',
+      lineHeight: 1.4,
+      fontWeight: fontWeightRegular,
       color: grey[900],
-      textAlign: 'left',
+    },
+    body2: {
+      fontSize: '0.9rem',
+      lineHeight: 1,
+      fontWeight: fontWeightThin,
+      color: grey[700],
+      fontStyle: 'italic',
     },
   },
 })

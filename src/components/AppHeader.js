@@ -1,7 +1,7 @@
 import AppBar from 'material-ui/AppBar'
 import Button from 'material-ui/Button'
-import Icon from 'material-ui/Icon'
 import IconButton from 'material-ui/IconButton'
+import MenuIcon from 'material-ui-icons/Menu'
 import PropTypes from 'prop-types'
 import React from 'react'
 import Toolbar from 'material-ui/Toolbar'
@@ -30,7 +30,7 @@ class AppHeader extends React.Component {
         <AppBar position="static">
           <Toolbar>
             <IconButton className={classes.menuButton} color="contrast" aria-label="Menu">
-              <Icon>menu</Icon>
+              <MenuIcon />
             </IconButton>
             <Typography type="title" color="inherit" className={classes.flex}>
 							Parent Trader

@@ -1,11 +1,18 @@
 import Button from 'material-ui/Button'
-import Icon from 'material-ui/Icon'
+import CardGiftcardIcon from 'material-ui-icons/CardGiftcard'
+import GiftItemCard from '../components/GiftItemCard'
+import Grid from 'material-ui/Grid'
+import GroupAddIcon from 'material-ui-icons/GroupAdd'
+import ParentCard from '../components/ParentCard'
 import PropTypes from 'prop-types'
 import React from 'react'
 import Typography from 'material-ui/Typography'
 import { withStyles } from 'material-ui/styles'
 
 const styles = theme => ({
+  root: {
+    padding: 20,
+  },
   button: {
     margin: theme.spacing.unit,
   },
@@ -18,6 +25,7 @@ const styles = theme => ({
   row: {
     display: 'flex',
     flexDirection: 'row',
+    marginBottom: 20,
   },
   item: {
     flex: 1,
@@ -32,31 +40,57 @@ class Group extends React.Component {
   render() {
     const { classes } = this.props
 
+    const giftList = (
+      <Grid container spacing={40}>
+        {Array(9).fill((
+          <Grid item xs={12} sm={6}>
+            <GiftItemCard />
+          </Grid>))
+        }
+      </Grid>
+    )
+
+    const parentList = (
+      <Grid container spacing={40}>
+        {Array(20).fill((
+          <Grid item xs={6} sm={4}>
+            <ParentCard firstName="Natasha" lastName="Boone" />
+          </Grid>))
+        }
+      </Grid>
+    )
+
     return (
-      <div className="group-component">
-        <Typography type="title">Loving Moms and Dads</Typography>
+      <div className={classes.root}>
+        <Typography type="title">Awesome Parents Group</Typography>
         <div className={classes.row}>
           <div className={classes.item}>
-            <Typography type="subheading">Available Items</Typography>
+            <Typography type="headline" align="left">
+							Available Items
+            </Typography>
           </div>
           <div className={classes.item}>
             <Button className={classes.button} raised color="primary">
 							Gift
-              <Icon className={classes.rightIcon}>card_giftcard</Icon>
+							<CardGiftcardIcon className={classes.rightIcon} />
             </Button>
           </div>
         </div>
+        {giftList}
         <div className={classes.row}>
           <div className={classes.item}>
-            <Typography type="subheading">Parents</Typography>
+            <Typography type="headline" align="left">
+							Parents
+            </Typography>
           </div>
           <div className={classes.item}>
             <Button className={classes.button} raised color="primary">
 							Invite
-              <Icon className={classes.rightIcon}>group_add</Icon>
+							<GroupAddIcon className={classes.rightIcon} />
             </Button>
           </div>
         </div>
+        {parentList}
       </div>
     )
   }

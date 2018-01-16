@@ -3,7 +3,6 @@ import './App.css'
 import React, { Component } from 'react'
 
 import AppHeader from './components/AppHeader'
-import FullWidthGrid from './components/FullWidthGrid'
 import Group from './views/Group'
 
 class App extends Component {
@@ -12,7 +11,6 @@ class App extends Component {
       <div className="App">
         <AppHeader />
         <Group />
-        <FullWidthGrid />
       </div>
     )
   }
