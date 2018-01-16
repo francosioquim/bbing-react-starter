@@ -42,7 +42,7 @@ class Group extends React.Component {
 
     const giftList = (
       <Grid container spacing={40}>
-        {Array(9).fill((
+        {Array(4).fill((
           <Grid item xs={12} sm={6}>
             <GiftItemCard />
           </Grid>))
@@ -52,7 +52,7 @@ class Group extends React.Component {
 
     const parentList = (
       <Grid container spacing={40}>
-        {Array(20).fill((
+        {Array(2).fill((
           <Grid item xs={6} sm={4}>
             <ParentCard firstName="Natasha" lastName="Boone" />
           </Grid>))
