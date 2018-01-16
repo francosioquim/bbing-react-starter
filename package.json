@@ -29,7 +29,6 @@
 		"eslint-config-airbnb": "^16.1.0",
 		"prettier-eslint": "^8.7.4"
 	},
-	"deploy": "gh-pages -d build",
 	"homepage": "https://francosioquim.github.io/bbing-react-starter",
 	"babel": {
 		"presets": ["react-app"]
