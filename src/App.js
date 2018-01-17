@@ -12,6 +12,7 @@ class App extends Component {
         <Locations>
           <Location path="/" handler={Landing} />
           <Location path="/landing" handler={Landing} />
+          <Location path="*" handler={Landing} />
         </Locations>
       </div>
     )
