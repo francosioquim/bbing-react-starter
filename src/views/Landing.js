@@ -23,10 +23,13 @@ class Landing extends React.Component {
   render() {
     const { classes } = this.props
 
+    const es8test = Object.entries({ a: 'A', b: 'B' })
+    console.log('show', es8test, ['a', 'b', 'c'].includes('a'))
+
     return (
       <div className={classes.root}>
         <Typography type="title" align="center">
-					Bibing: A ReactJS Starter Kit
+          Bibing: A ReactJS Starter Kit
         </Typography>
         <div>
           <Typography type="headline" align="left">
@@ -35,7 +38,9 @@ class Landing extends React.Component {
           <div>
             <ul className={classes.list}>
               <li>
-                <a href="https://github.com/facebookincubator/create-react-app">Create React App</a>
+                <a href="https://github.com/timarney/react-app-rewired">React App Rewired</a>: Tweak
+                the create-react-app webpack config(s) without using {'\'eject\''} and without
+                creating a fork of the react-scripts
               </li>
               <li>
                 <a href="https://github.com/mui-org/material-ui">Material-UI v1</a>
@@ -60,10 +65,10 @@ class Landing extends React.Component {
               </li>
               <li>
                 <a href="http://2ality.com/2016/02/ecmascript-2017.html">ECMAScript 2017</a>:
-								Pending
+                Pending
               </li>
               <li>
-                <a href="https://github.com/prettier/prettier">Prettier</a>
+                <a href="https://github.com/marcelmokos/eslint-config-with-prettier">Prettier</a>
               </li>
             </ul>
           </div>

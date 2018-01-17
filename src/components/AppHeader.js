@@ -6,34 +6,43 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import Toolbar from 'material-ui/Toolbar'
 import Typography from 'material-ui/Typography'
-import { withStyles } from 'material-ui/styles'
+import {withStyles} from 'material-ui/styles'
 
 const styles = {
   root: {
-    width: '100%',
+    width: '100%'
   },
   flex: {
-    flex: 1,
+    flex: 1
   },
   menuButton: {
     marginLeft: -12,
-    marginRight: 20,
-  },
+    marginRight: 20
+  }
 }
 
 class AppHeader extends React.Component {
   render() {
-    const { classes } = this.props
+    const {classes} = this.props
 
     return (
       <div className={classes.root}>
         <AppBar position="static">
           <Toolbar>
-            <IconButton className={classes.menuButton} color="contrast" aria-label="Menu">
+            <IconButton
+              className={classes.menuButton}
+              color="contrast"
+              aria-label="Menu"
+            >
               <MenuIcon />
             </IconButton>
-            <Typography type="title" color="inherit" className={classes.flex} align="center">
-							Bibing
+            <Typography
+              type="title"
+              color="inherit"
+              className={classes.flex}
+              align="center"
+            >
+              Bibing
             </Typography>
             <Button color="contrast">Login</Button>
           </Toolbar>
@@ -44,7 +53,7 @@ class AppHeader extends React.Component {
 }
 
 AppHeader.propTypes = {
-  classes: PropTypes.object.isRequired,
+  classes: PropTypes.object.isRequired
 }
 
 AppHeader.displayName = 'AppHeader'

@@ -1,42 +1,44 @@
 {
-	"name": "ptrader",
-	"version": "0.1.0",
-	"private": true,
-	"dependencies": {
-		"apollo-client": "^2.2.0",
-		"csstips": "^0.2.2",
-		"graphql-tag": "^2.6.1",
-		"material-ui": "^1.0.0-beta.27",
-		"material-ui-icons": "^1.0.0-beta.17",
-		"prop-types": "^15.6.0",
-		"react": "^16.2.0",
-		"react-apollo": "^2.0.4",
-		"react-dom": "^16.2.0",
-		"react-router-component": "^0.39.0",
-		"react-scripts": "^1.0.17",
-		"typeface-alegreya-sans": "0.0.45"
-	},
-	"scripts": {
-		"start": "react-scripts start",
-		"build": "react-scripts build",
-		"test": "react-scripts test --env=jsdom",
-		"eject": "react-scripts eject",
-		"predeploy": "npm run build",
-		"deploy": "gh-pages -d build"
-	},
-	"devDependencies": {
-		"babel-eslint": "^8.2.1",
-		"eslint-config-airbnb": "^16.1.0",
-		"gh-pages": "^1.1.0",
-		"prettier-eslint": "^8.7.4"
-	},
-	"homepage": "https://francosioquim.github.io/bbing-react-starter",
-	"babel": {
-		"presets": [
-			"react-app"
-		]
-	},
-	"eslintConfig": {
-		"extends": "react-app"
-	}
+  "scripts": {
+    "precommit": "lint-staged && yarn test:changed",
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "name": "ptrader",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "apollo-client": "^2.2.0",
+    "csstips": "^0.2.2",
+    "graphql-tag": "^2.6.1",
+    "material-ui": "^1.0.0-beta.27",
+    "material-ui-icons": "^1.0.0-beta.17",
+    "prop-types": "^15.6.0",
+    "react": "^16.2.0",
+    "react-apollo": "^2.0.4",
+    "react-dom": "^16.2.0",
+    "react-router-component": "^0.39.0",
+    "react-scripts": "^1.0.17",
+    "typeface-alegreya-sans": "0.0.45"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.1",
+
+    "eslint": "^4.15.0",
+    "eslint-config-airbnb": "^16.1.0",
+
+    "gh-pages": "^1.1.0",
+    "prettier-eslint": "^8.7.4",
+    "react-app-rewired": "^1.4.0"
+  },
+  "homepage": "https://francosioquim.github.io/bbing-react-starter",
+  "babel": {
+    "presets": ["react-app"]
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  }
 }

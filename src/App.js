@@ -1,3 +1,4 @@
+import { Location, Locations } from 'react-router-component'
 import React, { Component } from 'react'
 
 import AppHeader from './components/AppHeader'
@@ -8,7 +9,10 @@ class App extends Component {
     return (
       <div className="App">
         <AppHeader />
-        <Landing />
+        <Locations>
+          <Location path="/" handler={Landing} />
+          <Location path="/landing" handler={Landing} />
+        </Locations>
       </div>
     )
   }
