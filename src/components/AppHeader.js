@@ -10,15 +10,15 @@ import {withStyles} from 'material-ui/styles'
 
 const styles = {
   root: {
-    width: '100%'
+    width: '100%',
   },
   flex: {
-    flex: 1
+    flex: 1,
   },
   menuButton: {
     marginLeft: -12,
-    marginRight: 20
-  }
+    marginRight: 20,
+  },
 }
 
 class AppHeader extends React.Component {
@@ -32,16 +32,14 @@ class AppHeader extends React.Component {
             <IconButton
               className={classes.menuButton}
               color="contrast"
-              aria-label="Menu"
-            >
+              aria-label="Menu">
               <MenuIcon />
             </IconButton>
             <Typography
               type="title"
               color="inherit"
               className={classes.flex}
-              align="center"
-            >
+              align="center">
               Bibing
             </Typography>
             <Button color="contrast">Login</Button>
@@ -53,7 +51,7 @@ class AppHeader extends React.Component {
 }
 
 AppHeader.propTypes = {
-  classes: PropTypes.object.isRequired
+  classes: PropTypes.object.isRequired,
 }
 
 AppHeader.displayName = 'AppHeader'

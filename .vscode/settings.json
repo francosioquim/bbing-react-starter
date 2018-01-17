@@ -9,4 +9,5 @@
     // Whether to add a semicolon at the end of every line (semi: true),
     // or only at the beginning of lines that may introduce ASI failures (semi: false)
     "prettier.semi": false,
+    "eslint.enable": true,
   }
