@@ -59,7 +59,7 @@ class Landing extends React.Component {
               <li>
                 <a href="https://github.com/apollographql/apollo-client">
                   Apollo GraphQL
-                </a>: Pending
+                </a>
               </li>
               <li>
                 <a href="https://github.com/facebook/flow">Flow</a>: Pending
@@ -67,11 +67,7 @@ class Landing extends React.Component {
               <li>
                 <a href="https://github.com/webpack/webpack">Webpack 3</a>
               </li>
-              <li>
-                <a href="http://2ality.com/2016/02/ecmascript-2017.html">
-                  ECMAScript 2017
-                </a>: Pending
-              </li>
+              <li>ECMAScript 2017</li>
               <li>
                 <a href="https://github.com/marcelmokos/eslint-config-with-prettier">
                   Prettier
